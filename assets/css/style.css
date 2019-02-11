@@ -1,0 +1,29 @@
+body {
+    background-color: 'purple';
+    font-family: 'Kranky', cursive;
+    font-weight: 'bold';
+
+}
+
+.instructions {
+    text-align: 'center';
+    line-height: '100';
+}
+
+container,
+h4 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+h4,
+h5 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+#images {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}

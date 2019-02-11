@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="crystal-game/assets/css/style.css">
     <title>crystalgame</title>
 </head>
-<body>
-<container>
-<h1>Have fun with...Crystal Collector!</h1>
-<h4>~ made with love </h4>
-</container>
 
-<container>
-        <p><h3>Instructions:</h3>
+<body>
+    <h1><strong>Have fun with...Crystal Collector!</strong></h1>
+
+    <container id="intro">
+        <h3><em><strong>Instructions:</em></strong></h3>
+        <p id="instructions">
             <br>There are four cystals, click on a crystal to add a specific amount of points to your total score.</br>
             <br>*Win by matching your total score to the random number.</b>
             <br>*Lose if your total score excees the random number provided at the start of the game.</br>
         </p>
-</container>
+    </container>
 
-<container>
-        <img src="file:///Users/bernadettecordero/Desktop/crystal-game/yellow.jpg" alt="Yellow Stone" width="500" height="333">
-</container>
-    
+    <container id="stats">
+        <h4>Player, your random number is:
+            <div id="starterNumber"></div>
+        </h4>
+        <h5>Tally:
+            <div id="tally"></div>
+        </h5>
+        <h5>Wins: "#"</h5>
+        <h5>Losses: "#"</h5>
+    </container>
+
+    <container id="images">
+        <img id="yellow" src="crystal-game/assets/images/yellow.jpg" alt="yellow-crystal" width="200" height="200" />
+        <img id="blue" src="crystal-game/assets/images/blue.jpg" alt="blue-crystal" width="200" height="200" />
+        <img id="sputnik" src="crystal-game/assets/images/sputnik.jpg" alt="sputnik-crystal" width="200" height="200" />
+        <img id="spike" src="crystal-game/assets/images/spike.jpg" alt="spiked-crystal" width="200" height="200" />
+    </container>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="crystal-game/assets/javascript/game.js"></script>
 </body>
+
 </html>
 
 
@@ -52,7 +78,7 @@ This time, though, the player will guess with numbers instead of letters.
 
    * The player wins if their total score matches the random number from the beginning of the game. -->
 
-   <!-- * The player loses if their score goes above the random number.
+<!-- * The player loses if their score goes above the random number.
 
    * The game restarts whenever the player wins or loses.
 
